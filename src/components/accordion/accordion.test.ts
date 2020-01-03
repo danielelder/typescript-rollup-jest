@@ -1,4 +1,4 @@
-import * as setup from '../../../lib/jest-setup';
+import * as setup from '../../../lib/jest-helpers';
 import { collapse, expand, init } from './accordion';
 
 setup.loadTestFile('accordion.html', __dirname);

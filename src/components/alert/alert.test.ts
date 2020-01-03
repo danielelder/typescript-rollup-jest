@@ -1,4 +1,4 @@
-import * as setup from '../../../lib/jest-setup';
+import * as setup from '../../../lib/jest-helpers';
 import { hide, init, show } from './alert';
 
 setup.loadTestFile('alert.html', __dirname);
