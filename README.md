@@ -1,4 +1,4 @@
-# Typescript, Rollup and Jest
+# Typescript, Rollup & Jest Starter
 
 Starter project for building typescript projects using Rollup and Jest.
 
@@ -11,7 +11,7 @@ Starter project for building typescript projects using Rollup and Jest.
 - [x] [Jest](https://jestjs.io/en/) for unit testing and code coverage
 - [x] [JSDOM](https://github.com/tmpvar/jsdom) for DOM based testing
 - [x] Flexible build configuration using environment variables
-- [x] Rapid development with automatic javascript building and browser reloading 
+- [x] Rapid development with automatic javascript building and browser hot reloading 
 - [x] Easy debugging via VSCode integration
 
 ## Scripts
