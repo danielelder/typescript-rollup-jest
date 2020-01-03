@@ -24,7 +24,7 @@ Starter project for building typescript projects using Rollup and Jest.
 
 ### Tasks
 
-Access the task list using `shift+command+b` to run any of the above scripts.
+Access the task list using `shift+command+b` (`ctrl+shift+b` in Windows) to run any of the above scripts.
 
 ### Debugging
 
