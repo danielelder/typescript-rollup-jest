@@ -1,0 +1,19 @@
+# Git ignore, see http://help.github.com/ignore-files/
+
+# Project
+dist
+coverage
+
+# Dependencies
+node_modules
+npm-debug.log
+.sonarlint
+
+# IDEs
+.idea
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db

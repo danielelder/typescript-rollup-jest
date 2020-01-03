@@ -1,0 +1,15 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "member-access": [true, "no-public"],
+        "quotemark": [true, "single"],
+        "no-console": false,
+        "interface-name": false,
+        "trailing-comma": [true, {"multiline": "never", "singleline": "never"}]
+    },
+    "rulesDirectory": []
+}
