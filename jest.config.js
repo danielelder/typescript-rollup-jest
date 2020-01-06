@@ -3,6 +3,6 @@ module.exports = {
     '^.+\\.ts?$': 'ts-jest'
   },
   testEnvironment: 'jsdom',
-  testRegex: '/src/components/.*\\.test?\\.ts$',
+  testRegex: '/src/modules/.*\\.test?\\.ts$',
   moduleFileExtensions: ['ts', 'js']
 };

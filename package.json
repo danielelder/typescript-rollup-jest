@@ -3,21 +3,24 @@
   "version": "0.0.1",
   "author": "Dan Elder",
   "engines": {
-    "node": ">=12.14.0",
-    "npm": "~6.13.4"
+    "node": ">=12",
+    "npm": ">=6"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/danielelder/typescript-rollup-jest.git"
   },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/modules/index.d.ts",
   "description": "Typescript starter project with Rollup and Jest",
   "license": "ISC",
   "scripts": {
-    "build": "run-s clean test build_copy build_js",
-    "build_copy": "copyfiles -u 3 src/components/**/*.ts dist/modules -e src/**/*.test.ts",
+    "build": "run-s clean test build_js",
     "build_js": "rollup -c",
     "serve": "run-s clean serve_html serve_local",
-    "serve_html": "node bin/wrap-html.js",
+    "serve_html": "node lib/wrap-html.js",
     "serve_local": "run-p serve_js serve_livereload serve_httpserver",
     "serve_js": "NODE_ENV=development rollup -c -w",
     "serve_livereload": "livereload dist",
@@ -28,10 +31,8 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "@rollup/plugin-replace": "^2.3.0",
     "@rollup/plugin-typescript": "^2.0.1",
     "@types/jest": "^24.0.25",
-    "copyfiles": "^2.1.1",
     "glob": "^7.1.6",
     "http-server": "^0.12.0",
     "jest": "^24.9.0",

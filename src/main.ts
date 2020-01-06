@@ -1,5 +1,5 @@
-import { init as accordionInit} from './components/accordion/accordion';
-import { init as alertInit} from './components/alert/alert';
+import * as Accordion from './modules/accordion/accordion';
+import * as Alert from './modules/alert/alert';
 
-accordionInit();
-alertInit();
+Accordion.init();
+Alert.init();

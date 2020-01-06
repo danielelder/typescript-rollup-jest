@@ -1,4 +1,3 @@
-import replace from '@rollup/plugin-replace';
 import typescript from '@rollup/plugin-typescript';
 import { uglify } from 'rollup-plugin-uglify';
 
@@ -9,7 +8,7 @@ const isProduction = process.env.NODE_ENV !== 'development';
 export default {
   input: ['src/main.ts'],
   output: {
-    file: 'dist/js/main.js',
+    file: 'dist/js/bundle.js',
     format: 'iife',
     sourcemap: true,
     banner: `/*! ${version} */`
@@ -19,10 +18,6 @@ export default {
     exclude: ['node_modules/**']
   },
   plugins: [
-    replace({
-      delimiters: ['{{', '}}'],
-      version
-    }),
     typescript(),
     isProduction ? uglify({
       compress: {
